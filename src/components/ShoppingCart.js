@@ -7,7 +7,7 @@ import CartContext from '../components/contexts/CartContext';
 import ProductContext from '../components/contexts/ProductContext';
 
 const ShoppingCart = () => {
-	const cart = useContext(CartContext);
+	const { cart } = useContext(CartContext);
 	const { removeItem } = useContext(ProductContext);
 	const getCartTotal = () => {
 		return cart.reduce((acc, value) => {
